@@ -1,0 +1,26 @@
+# Zig build artifacts
+.zig-cache/
+zig-cache/
+zig-out/
+zig-pkg/
+
+# Debug / profiling output
+*.pdb
+*.dSYM/
+callgrind.out.*
+perf.data*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Env / local
+.env
+.env.*
