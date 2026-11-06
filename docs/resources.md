@@ -6,3 +6,5 @@
 - https://www.youtube.com/watch?v=MHv6cWjvQjM&t=1316s
 - https://man7.org/articles/, https://lwn.net/Articles/689856/
 
+## diverse
+- https://cpu.land/the-basics/
