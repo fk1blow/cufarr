@@ -8,3 +8,10 @@
 
 ## diverse
 - https://cpu.land/the-basics/
+
+## diy containers
+- [How Container Filesystem Works: Building a Docker-like Container From Scratch](https://labs.iximiuz.com/tutorials/container-filesystem-from-scratch)
+
+## misc
+- [Putting the “You” in CPU](https://cpu.land/how-to-run-a-program/)
+- [What happens when you start a process on Linux?](https://jvns.ca/blog/2016/10/04/exec-will-eat-your-brain/)
