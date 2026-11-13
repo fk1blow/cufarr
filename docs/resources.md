@@ -16,6 +16,7 @@
 
 ## cgroups
 - [Linux cgroup from first principles](https://fzakaria.com/2025/05/26/linux-cgroup-from-first-principles)
+- [Maximizing Resource Utilization with cgroup2](https://facebookmicrosites.github.io/cgroup2/docs/overview.html)
 
 ## shell
 - [Tutorial - Write a Shell in C](https://brennan.io/2015/01/16/write-a-shell-in-c/)
