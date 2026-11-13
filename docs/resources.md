@@ -14,5 +14,8 @@
 - [Operating Systems: Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf)
 - [Beej's Guide to Interprocess Communication](https://beej.us/guide/bgipc/html/)
 
+## cgroups
+- [Linux cgroup from first principles](https://fzakaria.com/2025/05/26/linux-cgroup-from-first-principles)
+
 ## shell
 - [Tutorial - Write a Shell in C](https://brennan.io/2015/01/16/write-a-shell-in-c/)
