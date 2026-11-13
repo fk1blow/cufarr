@@ -1,5 +1,6 @@
 # Resources
 
+- https://lwn.net/Articles/689856/
 - https://labs.iximiuz.com/tutorials/container-filesystem-from-scratch
 - https://www.youtube.com/watch?v=x1npPrzyKfs
 - https://www.youtube.com/watch?v=MHv6cWjvQjM&t=1316s
@@ -10,3 +11,4 @@
 ## processes
 - [Putting the “You” in CPU](https://cpu.land/how-to-run-a-program/)
 - [What happens when you start a process on Linux?](https://jvns.ca/blog/2016/10/04/exec-will-eat-your-brain/)
+- [Operating Systems: Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf)
