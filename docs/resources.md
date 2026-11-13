@@ -12,6 +12,7 @@
 - [Putting the “You” in CPU](https://cpu.land/how-to-run-a-program/)
 - [What happens when you start a process on Linux?](https://jvns.ca/blog/2016/10/04/exec-will-eat-your-brain/)
 - [Operating Systems: Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf)
+- [Beej's Guide to Interprocess Communication](https://beej.us/guide/bgipc/html/)
 
 ## shell
 - [Tutorial - Write a Shell in C](https://brennan.io/2015/01/16/write-a-shell-in-c/)
