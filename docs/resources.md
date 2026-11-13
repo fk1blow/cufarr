@@ -9,7 +9,7 @@
 - [Linux containers from scratch in C](https://www.lucavallin.com/blog/barco-linux-containers-from-scratch-in-)
 
 ## processes
-- [Putting the “You” in CPU](https://cpu.land/how-to-run-a-program/)
+- [Putting the "You" in CPU](https://cpu.land/how-to-run-a-program/)
 - [What happens when you start a process on Linux?](https://jvns.ca/blog/2016/10/04/exec-will-eat-your-brain/)
 - [Operating Systems: Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf)
 - [Beej's Guide to Interprocess Communication](https://beej.us/guide/bgipc/html/)
