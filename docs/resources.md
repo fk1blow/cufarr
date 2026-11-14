@@ -19,6 +19,7 @@
 - [Linux cgroup from first principles](https://fzakaria.com/2025/05/26/linux-cgroup-from-first-principles)
 - [Maximizing Resource Utilization with cgroup2](https://facebookmicrosites.github.io/cgroup2/docs/overview.html)
 - [Container from scratch - Using cgroups to manage process resources](https://kevinboone.me/containerfromscratch_cgroup.html)
+- [cgroupv2: Linux's new unified control group hierarchy](https://www.youtube.com/watch?v=ikZ8_mRotT4)
 
 ## shell
 - [Tutorial - Write a Shell in C](https://brennan.io/2015/01/16/write-a-shell-in-c/)
