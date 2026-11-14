@@ -7,6 +7,7 @@
 - https://man7.org/articles/, https://lwn.net/Articles/689856/
 - [How Container Filesystem Works: Building a Docker-like Container From Scratch](https://labs.iximiuz.com/tutorials/container-filesystem-from-scratch)
 - [Linux containers from scratch in C](https://www.lucavallin.com/blog/barco-linux-containers-from-scratch-in-)
+- [Container from scratch](https://kevinboone.me/containerfromscratch_toc.html)
 
 ## processes
 - [Putting the "You" in CPU](https://cpu.land/how-to-run-a-program/)
@@ -17,6 +18,7 @@
 ## cgroups
 - [Linux cgroup from first principles](https://fzakaria.com/2025/05/26/linux-cgroup-from-first-principles)
 - [Maximizing Resource Utilization with cgroup2](https://facebookmicrosites.github.io/cgroup2/docs/overview.html)
+- [Container from scratch - Using cgroups to manage process resources](https://kevinboone.me/containerfromscratch_cgroup.html)
 
 ## shell
 - [Tutorial - Write a Shell in C](https://brennan.io/2015/01/16/write-a-shell-in-c/)
