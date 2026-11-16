@@ -22,5 +22,8 @@
 - [Container from scratch - Using cgroups to manage process resources](https://kevinboone.me/containerfromscratch_cgroup.html)
 - [cgroupv2: Linux's new unified control group hierarchy](https://www.youtube.com/watch?v=ikZ8_mRotT4)
 
+## namespaces
+- [ What's in a Name? - Linux Namespaces ](https://www.youtube.com/watch?v=dunL7EXDRKs)
+
 ## shell
 - [Tutorial - Write a Shell in C](https://brennan.io/2015/01/16/write-a-shell-in-c/)
