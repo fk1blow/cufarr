@@ -18,22 +18,23 @@ Use `std.os.linux` syscalls directly (`fork`, `execve`, `wait4`, later `clone`, 
 
 ## Building
 
-No build.zig needed. Build by path, inside the VM. The drills use Linux-only syscalls, so they can't run on macOS. VM setup (repo mount, Zig install) is in [docs/testin-inside-vm.md](../../docs/testin-inside-vm.md).
+No build.zig needed. Build by path, inside the VM. The drills use Linux-only syscalls, so they can't run on macOS. VM setup (repo mount, Zig install) is in [docs/testing-inside-vm.md](../../docs/testing-inside-vm.md).
 
 Edit on the Mac, then build and run in one step inside the VM:
 
 ```sh
 cd ~/cufarr
-sudo /opt/zig/zig run src/rubber-docker/00_fork_exec.zig -- run /bin/ls
+sudo zig run src/rubber-docker/00_fork_exec.zig -- run /bin/ls
 ```
 
-Use the full path to Zig, because root's PATH doesn't include it. Debug with `strace -f`.
+Debug with `strace -f`.
 
 If the command gets long, add a shell alias or a small `justfile`. Switch to build.zig only when you want to build every level with one command, share flags across levels, or share modules or tests between them.
 
 ## Level 00 gotchas
 
 - Python's `os.execvp` searches `PATH` for you. Raw `execve` doesn't, so pass absolute paths (`/bin/ls`) or resolve `PATH` yourself.
-- argv must be null-terminated: `[*:null]const ?[*:0]const u8`. Build it with an arena allocator.
-- Check syscall errors with `std.os.linux.E.init(rc)`.
+- argv must be null-terminated: `[*:null]const ?[*:0]const u8`. No allocation needed: the kernel's argv (`init.args.vector`) already ends in `NULL`, so `@ptrCast(vector[2..])` works. Only suffix slices are safe, because execve reads until `NULL` and ignores the slice length.
+- Raw syscalls return `usize` holding `-errno` on failure. Check with `linux.errno(rc)` before `@intCast`, and print it with `{t}`.
+- `execve` only returns on failure, so code after it is the error path (`exit(127)`).
 - Decode the wait status with `std.os.linux.W` (`IFEXITED`, `EXITSTATUS`, `IFSIGNALED`, `TERMSIG`).
