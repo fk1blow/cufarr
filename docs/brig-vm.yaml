@@ -1,0 +1,36 @@
+#cloud-config
+# First-boot setup for the brig VM. Used by:
+#   multipass launch 24.04 --name brig --cpus 1 --memory 1G --disk 8G \
+#     --mount ~/Playground/cufarr:/home/ubuntu/cufarr \
+#     --cloud-init docs/brig-vm.yaml
+# Runs once, on first boot. Progress/logs inside the VM:
+#   cloud-init status --wait ; sudo cat /var/log/cloud-init-output.log
+
+# 2G swap so Zig compiles don't get OOM-killed with 1G RAM
+swap:
+  filename: /swapfile
+  size: 2G
+
+package_update: true
+packages:
+  - strace
+  - xz-utils
+
+runcmd:
+  - |
+    set -eu
+    ZIG_VERSION=0.17.0
+    ARCH="$(uname -m)"   # aarch64 (Apple Silicon) or x86_64 (Intel)
+    NAME="zig-${ARCH}-linux-${ZIG_VERSION}"
+    curl -fsSL "https://ziglang.org/download/${ZIG_VERSION}/${NAME}.tar.xz" -o /tmp/zig.tar.xz
+    rm -rf /opt/zig
+    mkdir -p /opt/zig
+    tar -xJf /tmp/zig.tar.xz -C /opt/zig --strip-components=1
+    rm /tmp/zig.tar.xz
+    # /usr/local/bin is in sudo's secure_path, so `sudo zig` works too
+    ln -sf /opt/zig/zig /usr/local/bin/zig
+  - |
+    set -eu
+    # Container runtime state. Lives on the VM disk, not a Mac mount:
+    # rootfs needs root ownership, setuid bits, device nodes and case-sensitive names.
+    mkdir -p /var/lib/brig/images /var/lib/brig/containers

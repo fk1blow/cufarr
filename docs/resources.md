@@ -1,5 +1,6 @@
 # Resources
 
+## misc
 - https://lwn.net/Articles/689856/
 - https://labs.iximiuz.com/tutorials/container-filesystem-from-scratch
 - https://www.youtube.com/watch?v=x1npPrzyKfs
@@ -28,3 +29,7 @@
 
 ## shell
 - [Tutorial - Write a Shell in C](https://brennan.io/2015/01/16/write-a-shell-in-c/)
+
+## zig
+- [Forking is Cool](https://ratfactor.com/zig/forking-is-cool)
+- [zig linux cookbook](https://github.com/godsarmy/zig-linux-cookbook)
