@@ -108,18 +108,7 @@ fn spawn(argv: [*:null]const ?[*:0]const u8) !void {
 }
 
 fn changeRoot(path: [*:0]const u8) !void {
-    std.debug.print("path {s} \n", .{path});
-    // chroot into images_dir
-    // then make sure cwd points at that, so you have to cd into it
-
-    // create the container
-    // extract rootfs to the container, tar xvf alpine.tar.gz container_path
-    // chroot into that new path, cd as well so cwd points to new root
-    // run the container's command(eg: /bin/echo hello zig)
-
     const rc = linux.chroot(path);
-    // const rc = linux.chroot("/var/lib/brig/containers/01/rootfs");
-    // const rc = linux.chroot("/var/lib/brig/containers/nothing");
     try check(rc, error.ChrootFailed);
 
     const chdir_rc = linux.chdir("/");
