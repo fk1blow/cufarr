@@ -11,6 +11,9 @@
 - [Container from scratch](https://kevinboone.me/containerfromscratch_toc.html)
 - [Rebuild Docker from Scratcho](https://github.com/Fewbytes/rubber-docker/tree/master)
 - [Operating Systems: Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP)
+- [Workshop: Linux Containers In (Less Than)](https://www.youtube.com/watch?v=kslHSOGqqHg)
+- [Containers From Scratch](https://ericchiang.github.io/post/containers-from-scratch/)
+- [Linux containers the hard way](https://www.youtube.com/watch?v=_rwjwdKNPnQ)
 
 ## processes
 - [Putting the "You" in CPU](https://cpu.land/how-to-run-a-program/)
@@ -33,3 +36,4 @@
 ## zig
 - [Forking is Cool](https://ratfactor.com/zig/forking-is-cool)
 - [zig linux cookbook](https://github.com/godsarmy/zig-linux-cookbook)
+- [Zig Guide Live](https://www.ziglang.in/)
